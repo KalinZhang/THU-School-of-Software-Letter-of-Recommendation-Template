@@ -1,0 +1,55 @@
+\documentclass[a4paper]{letter}
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\pagestyle{fancy}
+\title{\bf Recommendation Letter for Mr. Harry Potter}
+\author{xxx}
+\fancypagestyle{plain}{
+\fancyhead[C]{\includegraphics[height=1.6cm]{pic/ss.pdf}}
+\fancyfoot[C]{}
+}
+
+\pagestyle{plain}
+
+\makeatletter
+\let\ps@empty\ps@plain
+\let\ps@firstpage\ps@plain
+\makeatother
+% the end indent
+\setlength{\longindentation}{3in}
+\setlength{\indentedwidth}{\textwidth}
+\addtolength{\indentedwidth}{-\longindentation}
+%\setmainfont{Times New Roman}
+\address{Room xxx, District x, East Main Building,\\ Tsinghua University,\\Beijing, P. R. China, 100084}
+\begin{document}
+% \thispagestyle{fancy}
+\begin{letter}{\bf Recommendation Letter for Mr. Harry Potter}
+\opening{To Whom It May Concern:}
+
+I am a professor of School of Software at Tsinghua University.  ......
+
+\textbf{Project 1}. Detail 1
+
+\textbf{Project 2}. Detail 2 \footnote{\textbf{J. Weng}. ``THU Letter of Recommendation Template'' Proceedings of Overleaf. Overleaf Gallery, 2020.}
+
+\textbf{Project 3}. Detail 3 \footnote{This Template was first created by Mr. Jiayi Weng (\href{https://www.overleaf.com/latex/templates/thu-letter-of-recommendation-template/ghjfgfhykprk}{CST version}) and then edited into School of Software version}
+
+\textbf{Personality}. Details
+
+\textbf{Conclusion}. All things considered, Harry is undoubtedly a talented student with great potential. I have no doubt that he can qualify for your honorable program. Please do not hesitate to contact me if there is anything else I can do to support his application.
+
+\closing{Sincerely yours,\\
+\fromsig{%\includegraphics[scale=0.25]{pic/signature-xxx.jpg}
+}
+\fromname{xxx, Professor\\
+School of Software\\ 
+Phone: (86) 10-xxxx-xxxx \\ 
+Email: \href{mailto:xxx@mail.tsinghua.edu.cn}{xxx@tsinghua.edu.cn}\\ 
+Web: \url{https://www.thss.tsinghua.edu.cn/}}
+}
+
+\end{letter}
+\end{document}
